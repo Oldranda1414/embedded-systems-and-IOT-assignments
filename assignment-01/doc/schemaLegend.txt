@@ -1,0 +1,20 @@
+In the same folder as this schemaLegend.txt there are two schemas. 
+The short video is on my personal drive
+Use this link to access the video https://drive.google.com/file/d/1fD8NpW3uk9iyhPPZwJKUOw68dZsk5Ewj/view?usp=drivesdk
+They are different only in the colors of the cables
+IRLSchema.png has cables of the same colors shown in the video testVideo.mp4
+IdealSchema has cables of colors that reflect their use
+
+In both schemas pi cables are used where the drawing tool made them necessary, but they were not used in the video testVideo.mp4 as the components (resistors and leds) were directly inserted in the breadboard pins 
+
+The following legend refers to IdealSchema
+
+Legend
+
+black cable = ground
+red cable = 5V from arduino
+orange cable = red led input
+yellow cable = green leds input
+green cable = buttons output
+blue cable = potentiometer output
+pink cable = part of the wire of the component, added because of tinkercad limitations

@@ -1,0 +1,8 @@
+from
+
+cd C:\Users\leona\OneDrive\Desktop\arduino workspace\assignment-02\src\java
+
+
+javac -d bin -cp lib/jssc-2.9.4.jar;bin src/main_package/*.java
+
+java -cp lib/jssc-2.9.4.jar;bin main_package.JavaOutputProgram COM5

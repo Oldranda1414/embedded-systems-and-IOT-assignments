@@ -1,9 +1,4 @@
 /*
-  Library taken from https://github.com/nabontra/ServoTimer2, with some corrections to make it compilable
-*/
-
-
-/*
   ServoTimer2.h - Interrupt driven Servo library for Arduino using Timer2- Version 0.1
   Copyright (c) 2008 Michael Margolis.  All right reserved.
 
@@ -105,9 +100,9 @@ typedef struct {
 
   ServoPin_t Pin;
 
-  uint8_t counter;
+  byte counter;
 
-  uint8_t remainder;
+  byte remainder;
 
 }  servo_t;
 
@@ -123,7 +118,7 @@ class ServoTimer2
     void detach();
     void write(int);         // store the pulse width in microseconds (between MIN_PULSE_WIDTH and MAX_PULSE_WIDTH)for this channel
     int read(); 			 // returns current pulse width in microseconds for this servo
-	bool attached();      // return true if this servo is attached 
+	boolean attached();      // return true if this servo is attached 
  private:
 	 uint8_t chanIndex;      // index into the channel data for this servo
 
@@ -143,7 +138,7 @@ class ServoArrayT2
     void detach(int);        // detach the servo on the given channel
 	void write(int,int);     // store the pulse width in microseconds (between MIN_PULSE_WIDTH and MAX_PULSE_WIDTH)for the given channel
     int read(int); 			 // returns current pulse width in microseconds for the given channel
-	bool attached(int);   // return true if the servo on the given channel is attached 
+	boolean attached(int);   // return true if the servo on the given channel is attached 
  private:
 	 uint8_t chanIndex;      // index into the channel data for this servo
 

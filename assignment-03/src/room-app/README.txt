@@ -1,0 +1,1 @@
+Installare direttamente l'apk. L'app è utilizzabile solo per Android 12

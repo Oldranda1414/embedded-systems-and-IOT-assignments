@@ -1,0 +1,27 @@
+<html data-theme="light">
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    </head>
+
+    <div>
+        <div style="height: 500px">
+            <canvas id="chart"></canvas>
+        </div>
+        <label for="control">
+            <input type="checkbox" id="control" name="control" style="margin: 2%" onchange="takeControl()">
+            Take control of the room
+        </label>
+        <label for="switch" style="margin: 0 2%">
+            <input type="checkbox" id="switch" name="switch" role="switch" disabled checked>
+            Light
+        </label>
+        <label for="range">
+            <input type="range" min="0" max="100" value="0" id="range" name="range" oninput="this.nextElementSibling.value = this.value" style="width: 50%; margin: 2%" disabled checked>
+            Roller blind level: <output>0</output> % 
+        </label>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <script src="dashboard.js"></script>
+</html>
